@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://host.docker.internal:5432/accounts_service_dev
+    url: jdbc:postgresql://pop-os:5432/accounts_service_dev
     username: postgres
     password: postgres
   jpa:
