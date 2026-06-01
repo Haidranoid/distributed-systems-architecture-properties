@@ -1,11 +1,17 @@
 spring:
-  datasource:
-    url: jdbc:postgresql://pop-os:5432/accounts_service_dev
-    username: postgres
-    password: postgres
-  jpa:
-    hibernate:
-      ddl-auto: update
+  cloud:
+    gateway:
+      server:
+        webmvc:
+          routes:
+            - id: authentication-service
+              uri: http://authentication-service-srv:8080
+              predicates:
+                - Path=/api/v1/auth/**
+            - id: accounts-service
+              uri: http://accounts-service-srv:8081
+              predicates:
+                - Path=/api/v1/accounts/**
 application:
   security:
     jwt:
