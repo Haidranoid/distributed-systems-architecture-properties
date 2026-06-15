@@ -1,4 +1,9 @@
 spring:
+  kafka:
+    bootstrap-servers: host.docker.internal:29092
+  cloud:
+    config:
+      enabled: false
   datasource:
     url: jdbc:postgresql://host.docker.internal:5432/accounts_service_dev
     username: postgres

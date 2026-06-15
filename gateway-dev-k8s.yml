@@ -1,5 +1,9 @@
 spring:
+  kafka:
+    bootstrap-servers: pop-os:9092
   cloud:
+    config:
+      enabled: false
     gateway:
       server:
         webmvc:

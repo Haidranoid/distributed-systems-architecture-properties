@@ -1,5 +1,9 @@
 spring:
+  kafka:
+    bootstrap-servers: host.docker.internal:29092
   cloud:
+    config:
+      enabled: false
     gateway:
       server:
         webmvc:
