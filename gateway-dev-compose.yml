@@ -12,16 +12,24 @@ spring:
               uri: http://authentication-service-srv:8080
               predicates:
                 - Path=/api/v1/auth/**
+
             - id: accounts-service
               uri: http://accounts-service-srv:8081
               predicates:
                 - Path=/api/v1/accounts/**
+
+            - id: audit-service
+              uri: http://audit-service-srv:8082
+              predicates:
+                - Path=/api/v1/audit/**
+
             - id: media-generation-service
-              uri: http://media-generation-service-srv:8083
+              uri: http://media-generation-service-srv:8080
               predicates:
                 - Path=/api/v1/media-generation/**
+
             - id: content-service
-              uri: http://content-service-srv:8084
+              uri: http://content-service-srv:8080
               predicates:
                 - Path=/api/v1/content/**
 application:
