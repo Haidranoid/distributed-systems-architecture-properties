@@ -20,5 +20,5 @@ application:
       access-token-expiration: 2592000000
       refresh-token-expiration: 5184000000
   endpoints:
-    accounts-service-endpoint: http://accounts-service-srv:8081/api/v1/accounts
-    accounts-service-internal-endpoint: http://accounts-service-srv:8081/api/v1/internal/accounts
+    accounts-service-endpoint: http://accounts-service-srv:8082/api/v1/accounts
+    accounts-service-internal-endpoint: http://accounts-service-srv:8082/api/v1/internal/accounts
