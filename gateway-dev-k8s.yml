@@ -11,7 +11,7 @@ spring:
             - id: authentication-service
               uri: http://authentication-service-srv:8081
               predicates:
-                - Path=/api/v1/auth/**
+                - Path=/api/v1/authentication/**
 
             - id: accounts-service
               uri: http://accounts-service-srv:8082
