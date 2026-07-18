@@ -1,3 +1,8 @@
 spring:
   application:
     name: audit-service
+application:
+  security:
+    jwt:
+      issuer: authentication-service
+      algorithm: RS256

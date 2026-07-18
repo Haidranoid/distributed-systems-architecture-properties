@@ -1,3 +1,16 @@
 spring:
   application:
     name: authentication-service
+application:
+  security:
+    jwt:
+      issuer: ${spring.application.name}
+      algorithm: RS256
+      access-token-expiration: 2592000000
+      refresh-token-expiration: 5184000000
+      audience:
+        - gateway
+        - accounts-service
+        - audit-service
+        - media-generation-service
+        - content-service
