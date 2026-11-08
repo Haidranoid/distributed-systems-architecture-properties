@@ -1,10 +1,10 @@
+#"$schema": "https://json.schemastore.org/appsettings.json",
 {
-  #"$schema": "https://json.schemastore.org/appsettings.json",
+  "AllowedHosts": "*",
   "Logging": {
     "LogLevel": {
       "Default": "Information",
       "Microsoft.AspNetCore": "Warning"
     }
-  },
-  "AllowedHosts": "*"
+  }
 }

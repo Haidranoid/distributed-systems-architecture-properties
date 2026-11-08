@@ -1,0 +1,7 @@
+#"$schema": "https://json.schemastore.org/appsettings.json",
+{
+  "ConnectionStrings": {
+    "PostgresConnection": "Host=localhost;Port=5432;Database=posts_service_dev;Username=postgres;Password=postgres"
+  }
+}
+  
